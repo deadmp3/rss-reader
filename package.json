@@ -7,7 +7,7 @@
     "eslint": "eslint",
     "webpack": "webpack",
     "start": "node dist/server.js",
-    "build": "NODE_ENV=production npm run webpack -- -p && babel src --out-dir dist --source-maps inline",
+    "build": "NODE_ENV=production npm run webpack && babel src --out-dir dist --source-maps inline",
     "postinstall": "rm -rf dist && npm run build"
   },
   "repository": {
@@ -35,6 +35,7 @@
     "express": "",
     "body-parser": "",
     "webpack": "",
+    "webpack-cli": "",
     "html-webpack-plugin": "",
     "bootstrap": "4.0.0",
     "jquery": "",
