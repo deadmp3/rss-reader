@@ -1,0 +1,54 @@
+{
+  "name": "rss-reader",
+  "version": "0.0.1",
+  "description": "RSS reader",
+  "scripts": {
+    "babel-node": "babel-node",
+    "eslint": "eslint",
+    "webpack": "webpack",
+    "start": "node dist/server.js",
+    "build": "NODE_ENV=production npm run webpack -- -p && babel src --out-dir dist --source-maps inline",
+    "postinstall": "rm -rf dist && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadmp3/rss-reader.git"
+  },
+  "keywords": [
+    "rss",
+    "reader"
+  ],
+  "author": "Sergey Grigoryev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadmp3/rss-reader/issues"
+  },
+  "homepage": "https://github.com/deadmp3/rss-reader#readme",
+  "dependencies": {
+    "babel-cli": "",
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-preset-env": "",
+    "babel-preset-stage-0": "",
+    "babel-polyfill": "",
+    "nodelist-foreach-polyfill": "",
+    "express": "",
+    "body-parser": "",
+    "webpack": "",
+    "html-webpack-plugin": "",
+    "bootstrap": "4.0.0",
+    "jquery": "",
+    "popper.js": "",
+    "style-loader": "",
+    "css-loader": "",
+    "validator": "",
+    "axios": "",
+    "uuid": ""
+  },
+  "devDependencies": {
+    "babel-eslint": "",
+    "eslint": "",
+    "eslint-config-airbnb": "",
+    "eslint-plugin-import": ""
+  }
+}
