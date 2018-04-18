@@ -10,6 +10,9 @@
     "build": "NODE_ENV=production npm run webpack && babel src --out-dir dist --source-maps inline",
     "postinstall": "rm -rf dist && npm run build"
   },
+  "engines": {
+    "node": "9.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deadmp3/rss-reader.git"
