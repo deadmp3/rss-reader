@@ -12,7 +12,7 @@ export default () => ({
   devtool: process.env.NODE_ENV === 'development' ? 'inline-source-map' : '',
   output: {
     publicPath: '/assets/',
-    path: path.join(__dirname, '../..', 'assets'),
+    path: path.join(__dirname, 'assets'),
     filename: '[name].js',
     library: '[name]',
   },
