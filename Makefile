@@ -2,11 +2,10 @@ start:
 	npm start
 
 develop:
-	NODE_ENV=development npm run webpack -- --watch
+	NODE_ENV=development npm run nodemon -- --exec npm run babel-node -- server/bin/rss-reader.js
 
-build:
-	rm -rf dist
-	npm run build
+test:
+	npm test
 
 lint:
-	npm run eslint -- src
+	npm run eslint -- server app
